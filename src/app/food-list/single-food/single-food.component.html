@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-xs-12">
+        <img style='max-width: 400px' *ngIf="food.photo" [src]="food.photo">
+        <h1>{{ food.title }}</h1>
+        <h3>{{ food.author }}</h3>
+        <h3>{{ food.prix }}</h3>
+        <button class="btn btn-default" (click)="onBack()">Retour</button>
+    </div>
+</div>
